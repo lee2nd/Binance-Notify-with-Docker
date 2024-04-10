@@ -7,8 +7,8 @@ class Binance():
     
     def __init__(self):
         
-        self.api_key = 'MYgUFxFMjeVglbzUsips2x38QR11XNJQ5NuYVbov3QBITOcyYmnBGA3MtuHTegWY'
-        self.api_secret = 'tOfsgUFcmjb1odifv2F1z4gYjl8Fvbzr5xjbQmiMbNSZnADjRcpCuToHp1H0R2x7'
+        self.api_key = 'YOUR_BINANCE_API_KEY'
+        self.api_secret = 'YOUR_BINANCE_API_SECRET'
         self.client = Client(self.api_key,self.api_secret)
 
     def check_price(self, symbol, interval, drop_percentage):
@@ -30,8 +30,8 @@ class Binance():
         
 # initialize object
 b_obj = Binance()
-po = Pushover("avro7p8fqf4p7k63rz4qf7yk2x77e8")
-po.user("uq3e53cs3vg64qee9sg539n75kd821")
+po = Pushover("YOUR_PUSHOVER_API_TOKEN")
+po.user("YOUR_PUSHOVER_USER_TOKEN")
 
 sbl_lst = ['BTCUSDT','ETHUSDT']
 retry_counter = 0
