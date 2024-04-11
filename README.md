@@ -11,8 +11,8 @@ docker build -t binance_notify .</br>
 
 # Docker Run
 
-docker run -d --name 3m binance_notify python 3m.py</br>
-docker run -d --name 15m binance_notify python 15m.py</br>
-docker run -d --name 1h binance_notify python 1h.py</br>
-docker run -d --name 4h binance_notify python 4h.py</br>
-docker run -d --name 8h binance_notify python 8h.py</br>
+docker run -d --restart=unless-stopped --name 3m binance_notify python 3m.py</br>
+docker run -d --restart=unless-stopped --name 15m binance_notify python 15m.py</br>
+docker run -d --restart=unless-stopped --name 1h binance_notify python 1h.py</br>
+docker run -d --restart=unless-stopped --name 4h binance_notify python 4h.py</br>
+docker run -d --restart=unless-stopped --name 8h binance_notify python 8h.py</br>
